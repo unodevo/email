@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Email Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #dddddd;
+        }
+        .header {
+            background-color: #c3968d;
+            color: white;
+            padding: 0;
+            text-align: center;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        .content {
+            padding: 20px;
+            text-align: left;
+        }
+        .content h1 {
+            font-size: 24px;
+            margin: 0 0 10px;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 20px;
+        }
+        .cta {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px 0;
+            background-color:#c3968d;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            background-color: #f1f1f1;
+            color: #555;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+        .signature {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .signature img {
+            width: 100px;
+            height: auto;
+            display: block;
+        }
+        @media screen and (max-width: 600px) {
+            .header, .content, .footer {
+                padding: 15px;
+            }
+            .content h1 {
+                font-size: 20px;
+            }
+            .content p {
+                font-size: 14px;
+            }
+            .cta {
+                width: 100%;
+            }
+            .signature img {
+                width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <table class="email-container">
+        <tr>
+            <td class="header">
+                <img src="img/pimg.png" alt="Header Image">
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <h1>Dear Laura,</h1>
+                <p>We are excited to announce that our new Pilates classes are now available! These classes are designed to help you achieve your fitness goals with ease and enjoyment.</p>
+                <p>What's new:</p>
+                <ul>
+                    <li>Enhanced workout plans</li>
+                    <li>Expert instructors</li>
+                    <li>Flexible schedules</li>
+                </ul>
+                <a href="#" class="cta">Enroll Now</a>
+                <div class="signature">
+                    <p>Best regards,</p>
+                    <p>Your Company</p>
+                    <img src="img/TES.png" alt="Signature">
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p>&copy; 2024 Pilates. All rights reserved.</p>
+                <p><a href="#">Unsubscribe</a> | <a href="#">Privacy Policy</a></p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
